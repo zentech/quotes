@@ -2,9 +2,9 @@ body {
   background-color: #354048;
 }
 
-.test {
+/*.test {
   border-style: solid;
-}
+}*/
 
 .container {
   padding-top: 50px;
@@ -24,7 +24,8 @@ body {
 
 .sub_text {
    font-family: 'Cinzel', serif;
-   font-size: 30px;
+   font-size: 25px;
+   font-weight: bold;
 }
 
 #getMessage {
@@ -58,8 +59,8 @@ i {
 }
 
 .btn {
-  font-size: 25px;
-  border-radius: 50px;
+  font-size: 35px;
+  border-radius: 70px;
 }
 
 /*.btn {
