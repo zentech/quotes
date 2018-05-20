@@ -1,0 +1,50 @@
+body {
+  background-color: #354048;
+}
+
+.test {
+  border-style: solid;
+}
+
+.container {
+  padding-top: 50px;
+}
+.header_text {
+    font-family: 'Allura';font-size: 50px;
+    
+}
+
+.text-primary {
+  color: #29c0ec!important;
+}
+
+.sub_text {
+   font-family: 'Allura';font-size: 30px;
+}
+
+#getMessage {
+   font-size: 18px;
+}
+
+.image {
+  width: 160px;
+  height: 180px;
+  border-radius: 300px;
+  border-color: green;
+  border-width: 5px;
+  border-style: solid;
+  
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.text {
+  color: white;
+  font-family: 'Verdana';
+  font-size: 20px;
+}
+
