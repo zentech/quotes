@@ -9,8 +9,10 @@ body {
 .container {
   padding-top: 50px;
 }
+
 .header_text {
-    font-family: 'Allura';font-size: 50px;
+    font-family: 'Allura';
+    font-size: 50px;
     
 }
 
@@ -30,8 +32,8 @@ body {
   width: 160px;
   height: 180px;
   border-radius: 300px;
-  border-color: green;
-  border-width: 5px;
+  border-color: #29c0ec;
+  border-width: 3px;
   border-style: solid;
   
 }
@@ -47,4 +49,5 @@ body {
   font-family: 'Verdana';
   font-size: 20px;
 }
+
 

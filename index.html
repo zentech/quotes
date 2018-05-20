@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
  <title>Random Quotes Generator</title> 
-  
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-      <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
   
 </head>
@@ -27,19 +29,32 @@
       <button id="getMessage" class="btn btn-primary">Get quote!</button>
   </div> 
   <br> 
-  <div class="col-lg-8 offset-lg-2">
-    <div id="content" class="row col-lg-12 text center"></div> 
-  <div id="author" class="row col-lg-12 text center"></div> 
+  <div class="col-8 mx-auto">
+    <div id="content" class="row col-12 text"></div> 
+  <div id="author" class="row col-12 text"></div> 
+  </div>  
+  <!-- buttons -->
+<div class="container">
+  <div class="row">
+    <div class="col-4 text-center">
+      <a class="btn btn-info">
+        <i class="far fa-chevron-circle-left"></i>
+      </a>
+    </div>
+    <div class="col-4 text-center">       
+        <a class="btn btn-info btn-social btn-twitter mx-auto" href="https://twitter.com/intent/tweet?text=The shoe that fits one person pinches another; there is no recipe for living that suits all cases.   Carl Jung " target="_blank">
+        <i class="fa fa-twitter"></i>
+        </a>      
+    </div>
+    <div class="col-4 text-center">
+      <a class="btn btn-info">
+        <i class="far fa-chevron-circle-right"></i>
+      </a>
+    </div>
   </div>
-  <div class="row " >
-    <div id="twitter-btn" class="center">   
-    <a class="btn btn-info btn-social btn-twitter " href="https://twitter.com/intent/tweet?text=" target="_blank">
-    <i class="fa fa-twitter"> Twitter</i>
-  </a> 
-      </di>
-    
-    </div> 
-  </div>
+</div>
+
+
 </div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 
