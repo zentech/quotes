@@ -11,8 +11,10 @@ body {
 }
 
 .header_text {
-    font-family: 'Allura';
-    font-size: 50px;
+    /*font-family: 'Allura';*/
+    font-family: 'Cinzel', serif;
+    font-size: 60px;
+    font-weight: bold;
     
 }
 
@@ -21,7 +23,8 @@ body {
 }
 
 .sub_text {
-   font-family: 'Allura';font-size: 30px;
+   font-family: 'Cinzel', serif;
+   font-size: 30px;
 }
 
 #getMessage {
@@ -50,4 +53,17 @@ body {
   font-size: 20px;
 }
 
+i {
+  color: white;
+}
+
+.btn {
+  font-size: 25px;
+  border-radius: 50px;
+}
+
+/*.btn {
+  font-size: 25px;
+  border-radius: 100px !important;
+}*/
 
