@@ -2,12 +2,8 @@ body {
   background-color: #354048;
 }
 
-/*.test {
-  border-style: solid;
-}*/
-
-.container {
-  padding-top: 50px;
+#main-container {
+  padding-top: 150px;
 }
 
 .header_text {
@@ -26,6 +22,7 @@ body {
    font-family: 'Cinzel', serif;
    font-size: 25px;
    font-weight: bold;
+   padding-top: 15px;
 }
 
 #getMessage {
@@ -63,8 +60,8 @@ i {
   border-radius: 70px;
 }
 
-/*.btn {
-  font-size: 25px;
-  border-radius: 100px !important;
-}*/
+#buttons {
+  display: none;
+}
+
 
