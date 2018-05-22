@@ -1,5 +1,6 @@
 window.onload = function() { 
   //variables
+  var quote;
   var index; //keeping track of quote index in array
   var quoteList = [];
   var quoteText = document.getElementById("content")
@@ -25,7 +26,7 @@ window.onload = function() {
     $.getJSON(quoteUrl, function(json) {   
       // console.log(json.quoteText +"\n"+ json.quoteAuthor);    
       //adding quote to quote json variable
-      var quote = {
+      quote = {
         "quote": json.quoteText, 
         "author": json.quoteAuthor
       };       
@@ -71,7 +72,7 @@ window.onload = function() {
   //post to twitter function
   function postTweet() {
     /*preparing href link for twitter button*/
-    var quot = 'https://twitter.com/intent/tweet?text='+ json.quoteText + " "+json.quoteAuthor;
+    var quot = 'https://twitter.com/intent/tweet?text='+ quoteList[index].quote + " "+quoteList[index].author;
     $(".btn-twitter").attr("href", quot);
   }
 
