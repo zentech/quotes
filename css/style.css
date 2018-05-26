@@ -25,10 +25,6 @@ body {
    padding-top: 15px;
 }
 
-#getMessage {
-   font-size: 18px;
-}
-
 .image {
   width: 160px;
   height: 180px;
@@ -55,13 +51,19 @@ i {
   color: white;
 }
 
+#buttons {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 1rem;
+}
+
 .btn {
   font-size: 35px;
   border-radius: 70px;
 }
 
-#buttons {
+/*#buttons {
   display: none;
-}
+}*/
 
 

@@ -2,10 +2,11 @@ window.onload = function() {
   //variables
   var quote;
   var index; //keeping track of quote index in array
+  console.log(index)
   var quoteList = [];
   var quoteText = document.getElementById("content")
   var quoteAuthor = document.getElementById("author")
-  var getQuoteBtn = document.getElementById("getMessage");
+  // var getQuoteBtn = document.getElementById("getMessage");
   var socialBtns = document.getElementById("buttons");
   var backBtn = document.getElementById("backBtn");
   var forwardBtn = document.getElementById("forwardBtn");
@@ -13,7 +14,7 @@ window.onload = function() {
   var quoteUrl = "https://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=jsonp&lang=en&jsonp=?";
 
   //event listener get new quote
-  getQuoteBtn.addEventListener("click", getQuote);
+  // getQuoteBtn.addEventListener("click", getQuote);
   //event listener previous quote (backward arrow)
   backBtn.addEventListener("click", getPrevQuote);
   //event listener for moving forward (next quote)
@@ -22,7 +23,7 @@ window.onload = function() {
   twitterBtn.addEventListener("click", postTweet);
 
   //function getQuote
-  function getQuote() {
+  /*function getQuote() {
     $.getJSON(quoteUrl, function(json) {   
       // console.log(json.quoteText +"\n"+ json.quoteAuthor);    
       //adding quote to quote json variable
@@ -38,7 +39,7 @@ window.onload = function() {
       quoteAuthor.innerHTML = `-- ${quote.author}`;
       socialBtns.style.display = "inline";
     });   
-  }
+  }*/
 
   //previous quote function
   function getPrevQuote() {
@@ -53,13 +54,28 @@ window.onload = function() {
 
   //next quote function
   function getNextQuote() {
-    if(index < quoteList.length-1) {
+    if(index == quoteList.length-1 || index === undefined) {
+      $.getJSON(quoteUrl, function(json) {   
+        // console.log(json.quoteText +"\n"+ json.quoteAuthor);    
+        //adding quote to quote json variable
+        quote = {
+          "quote": json.quoteText, 
+          "author": json.quoteAuthor
+        };       
+        console.log(quote.quote +" \n"+quote.author);    
+        //adding json quote to array
+        quoteList.push(quote);
+        (quoteList.length == 1) ? index = 0 : index++;
+        setQuote();
+      });
+    }
+    else if(index < quoteList.length-1) {
       index++;
       setQuote();
     }
     else {
       alert("Press \"Get quote!\"");
-    }    
+    }      
     
   }
 
